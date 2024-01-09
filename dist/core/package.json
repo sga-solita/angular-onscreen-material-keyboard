@@ -23,8 +23,7 @@
     "@angular/core": "^11.0.0 || ^12.0.0",
     "@angular/forms": "^11.0.0 || ^12.0.0",
     "@angular/material": "^11.0.0 || ^12.0.0",
-    "rxjs": "^6.6.6",
-    "emulate-tab": "^1.2.1"
+    "rxjs": "^6.6.6"
   },
   "keywords": [
     "angular",
@@ -47,6 +46,7 @@
   "metadata": "angular-onscreen-material-keyboard.metadata.json",
   "sideEffects": false,
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.0.0",
+    "emulate-tab": "^1.2.1"
   }
 }
