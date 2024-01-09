@@ -1,6 +1,14 @@
 # Output Directories #
 build/
-dist/
+
+# Do not ignore dist/ folder #
+!/dist/
+
+# Ignore all files in dist/ folder #
+/dist/*
+# except core folder #
+!/dist/core/
+
 docs/
 src/core/.ng_pkg_build
 target/
