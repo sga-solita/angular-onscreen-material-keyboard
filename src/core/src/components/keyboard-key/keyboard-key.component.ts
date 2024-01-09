@@ -5,6 +5,7 @@ import { MAT_KEYBOARD_DEADKEYS } from '../../configs/keyboard-deadkey.config';
 import { KeyboardClassKey } from '../../enums/keyboard-class-key.enum';
 import { IKeyboardDeadkeys } from '../../interfaces/keyboard-deadkeys.interface';
 import { IMatIcon } from '../../interfaces/keyboard-icons.interface';
+import { emulateTab } from 'emulate-tab';
 
 export const VALUE_NEWLINE = '\n\r';
 export const VALUE_SPACE = ' ';
@@ -221,7 +222,10 @@ export class MatKeyboardKeyComponent implements OnInit, OnDestroy {
         break;
 
       case KeyboardClassKey.Tab:
-        char = VALUE_TAB;
+        const switchedInput = emulateTab(); // Attempt to go to the next input
+        if (!switchedInput) {
+          console.warn('No input found to switch to');
+        }
         this.tabClick.emit(event);
         break;
 

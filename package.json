@@ -44,6 +44,7 @@
     "@schematics/update": "^0.900.7",
     "classlist.js": "1.1.20150312",
     "core-js": "^3.9.1",
+    "emulate-tab": "^1.2.1",
     "karma": "~6.1.2",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage-istanbul-reporter": "~3.0.2",
